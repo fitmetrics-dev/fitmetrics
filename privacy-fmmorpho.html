@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — FMMorpho (Fit Metrics)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; max-width: 42rem; margin: 1rem auto; padding: 0 1rem; color: #111; }
+    h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+    h3 { font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.4rem; }
+    hr { margin: 1.25rem 0; border: none; border-top: 1px solid #ccc; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    a { color: #0b57d0; }
+    .back { margin-bottom: 1.25rem; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="back"><a href="./index.html">← Voltar ao site Fit Metrics</a></p>
+
+    <h1>Política de Privacidade – Fit Metrics Morfológico (FMMorpho)</h1>
+
+    <h2>1. Introdução</h2>
+    <p>O aplicativo <strong>Fit Metrics Morfológico (FMMorpho)</strong> foi desenvolvido por <strong>Prof. Vitor Hansen (CREF 000781-G/RS)</strong> com o objetivo de realizar <strong>avaliações físicas morfológicas</strong> e gerar relatórios personalizados de composição corporal e evolução.</p>
+    <p>O app foi pensado para uso por <strong>profissionais de Educação Física, fisioterapia, nutrição, personal trainers e demais profissionais da saúde</strong>, auxiliando no acompanhamento de alunos/clientes em academias, estúdios, clínicas e consultórios.</p>
+    <p>Esta política descreve <strong>como os dados são utilizados, armazenados e protegidos</strong> dentro do aplicativo.</p>
+
+    <hr>
+
+    <h2>2. Responsabilidade e uso autorizado</h2>
+    <p>O aplicativo <strong>FMMorpho</strong> é de propriedade e autoria de <strong>Prof. Vitor Hansen (CREF 000781-G/RS)</strong>.</p>
+    <p>O uso do aplicativo é destinado a <strong>profissionais da saúde e avaliadores autorizados</strong>, para fins de <strong>avaliação morfológica de alunos/clientes</strong>.<br>É proibida a redistribuição, cópia ou modificação do aplicativo sem autorização expressa do autor.</p>
+
+    <hr>
+
+    <h2>3. Coleta e uso de informações</h2>
+
+    <h3>3.0 Dados das avaliações e cadastros locais</h3>
+    <p>As informações dos <strong>alunos, professores, academias e avaliações</strong> — como nome, dados de contato (se informados), medidas antropométricas, resultados e relatórios — <strong>ficam armazenadas apenas no dispositivo local</strong> (banco de dados interno do aplicativo), salvo se você usar backup ou compartilhamento conforme descrito abaixo.</p>
+    <p>Esses dados locais são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Gerar relatórios individuais e evolutivos de composição corporal;</li>
+      <li>Permitir acompanhamento da evolução dos alunos/clientes ao longo do tempo;</li>
+      <li>Emitir relatórios em formato PDF que podem ser compartilhados manualmente pelo usuário (por exemplo, via e-mail ou aplicativos de mensagens).</li>
+    </ul>
+    <p>O desenvolvedor <strong>não</strong> recebe uma cópia desses dados em servidores próprios; eles não são sincronizados automaticamente com uma nuvem operada pelo autor do app.</p>
+
+    <h3>3.1 Conta de proprietário na nuvem (opcional — Google Firebase)</h3>
+    <p>Se você <strong>criar uma conta de proprietário</strong> (botão “Criar conta” na tela inicial), o aplicativo utiliza os serviços <strong>Google Firebase</strong> (Firebase Authentication e Cloud Firestore), operados pelo Google LLC, para:</p>
+    <ul>
+      <li><strong>Autenticação</strong>: armazenamento seguro de <strong>e-mail</strong> e <strong>credenciais de acesso</strong> (a senha é tratada pelo Firebase; o app não a armazena em texto puro).</li>
+      <li><strong>Perfil mínimo na nuvem</strong>: em Firestore, é gravado um documento associado à sua conta com <strong>e-mail</strong>, <strong>nome completo</strong> informado no cadastro, identificador da conta, data de criação e identificação do app — para vincular a conta ao dispositivo e permitir <strong>entrar novamente</strong> após reinstalar o app ou trocar de aparelho.</li>
+    </ul>
+    <p><strong>Finalidade</strong>: identificar o proprietário do uso do app (por exemplo, limite de avaliações e recursos ligados à conta), sem substituir o armazenamento local das avaliações.</p>
+    <p><strong>O que não é enviado ao Firebase</strong>: dados dos alunos, medidas antropométricas, avaliações completas e relatórios <strong>não</strong> são enviados ao Firebase; permanecem apenas no dispositivo (salvo backup manual feito por você).</p>
+    <p><strong>Redefinição de senha</strong>: se você usar <strong>“Esqueci a senha”</strong> na tela de entrar, o Firebase envia um <strong>e-mail</strong> com link para definir uma nova senha. Esse envio é feito pelos servidores do Google.</p>
+    <p><strong>Exclusão da conta na nuvem</strong>: em <strong>Configurações → Manutenção → Apagar conta e dados na nuvem</strong>, após confirmações, o app pede a <strong>senha atual</strong> por segurança e remove o perfil em Firestore e a conta no Firebase Authentication. <strong>Os dados locais</strong> (alunos, avaliações, etc.) <strong>permanecem no aparelho</strong> até você os apagar no app ou desinstalar o app, conforme sua escolha.</p>
+    <p>Para detalhes técnicos da integração Firebase, consulte a documentação no repositório do código-fonte do aplicativo (destinada a desenvolvedores).</p>
+
+    <h3>3.2 Backup e restauração</h3>
+    <p>O aplicativo oferece funcionalidade opcional de <strong>backup dos dados</strong>, que gera um arquivo do banco de dados (formato <code>.db</code>) localmente no dispositivo.<br>Este backup pode ser compartilhado manualmente pelo usuário (via apps de compartilhamento do dispositivo) para fins de cópia de segurança.</p>
+    <ul>
+      <li><strong>Nenhum backup é enviado automaticamente para servidores externos</strong> pelo fluxo de backup do app.</li>
+      <li>Os dados das <strong>avaliações e cadastros</strong> não são sincronizados automaticamente com nuvem pelo app. A <strong>conta de proprietário</strong> opcional usa Firebase conforme a secção 3.1 (fora do arquivo de backup <code>.db</code>).</li>
+    </ul>
+    <p>Dados locais não são compartilhados com terceiros nem enviados pela internet sem <strong>ação explícita do usuário</strong> (backup manual, compartilhar PDF, ou criar/gerir conta na nuvem). A criação da conta de proprietário é voluntária.</p>
+
+    <hr>
+
+    <h2>4. Armazenamento de dados</h2>
+    <ul>
+      <li><strong>Avaliações, alunos, professores e academias</strong>: armazenados <strong>localmente</strong> no dispositivo (Room/SQLite). Não há sincronização automática desses dados com servidores do desenvolvedor.</li>
+      <li><strong>Conta de proprietário (se criada)</strong>: e-mail e perfil mínimo associados ficam nos serviços <strong>Firebase</strong> (Google), conforme a secção 3.1.</li>
+      <li><strong>Backup manual (.db)</strong>: o arquivo de backup, quando gerado, permanece no dispositivo ou onde você o enviar; não é enviado automaticamente pelo app para o desenvolvedor.</li>
+    </ul>
+    <p>O usuário é responsável por manter o dispositivo seguro e, se desejar, realizar cópias de segurança (backup) dos dados armazenados localmente.</p>
+
+    <hr>
+
+    <h2>5. Segurança das informações</h2>
+    <p>O FMMorpho foi projetado seguindo boas práticas de segurança digital, incluindo:</p>
+    <ul>
+      <li>Armazenamento local em banco de dados protegido (Room Database);</li>
+      <li>Dados clínicos/cadastrais dos alunos <strong>não</strong> são enviados a servidores do desenvolvedor;</li>
+      <li>Conta de proprietário na nuvem usa infraestrutura do <strong>Google Firebase</strong> (HTTPS), com reautenticação por senha antes de apagar a conta;</li>
+      <li>Nenhum acesso não autorizado à câmera, microfone ou localização.</li>
+    </ul>
+    <p>Ainda assim, recomenda-se <strong>não compartilhar o dispositivo com terceiros</strong> sem medidas de proteção, como senha de acesso ou bloqueio de tela, pois quem tiver acesso físico ao dispositivo poderá acessar os dados das avaliações.</p>
+
+    <hr>
+
+    <h2>6. Direitos autorais e propriedade intelectual</h2>
+    <p>Todo o código-fonte, design e lógica funcional do aplicativo são de autoria de <strong>Prof. Vitor Hansen</strong>.</p>
+    <p>Logotipos, nomes e identidades visuais de academias, clínicas, estúdios ou demais instituições exibidos no aplicativo pertencem às respectivas instituições e são utilizados <strong>com autorização de seus proprietários</strong>.</p>
+    <p>Caso qualquer titular de direitos identifique uso indevido de imagem, marca ou conteúdo, basta entrar em contato para que o material seja <strong>imediatamente removido ou substituído</strong>.</p>
+
+    <hr>
+
+    <h2>7. Atualizações e melhorias</h2>
+    <p>Esta política poderá ser atualizada conforme novas funcionalidades forem implementadas.</p>
+    <p><strong>Versão atual (FMMorpho 1.x):</strong></p>
+    <ul>
+      <li><strong>Dados de avaliações e cadastros</strong> permanecem no dispositivo; o app <strong>não</strong> envia esses dados a servidores do desenvolvedor.</li>
+      <li><strong>Conta de proprietário opcional</strong> usa <strong>Firebase</strong> (Google) para autenticação e perfil mínimo na nuvem, conforme a secção 3.1.</li>
+      <li>Conexões de rede, quando ocorrem (conta, redefinição de senha, exclusão de conta), usam os serviços do Google Firebase sobre HTTPS.</li>
+      <li>Não utiliza anúncios;</li>
+      <li>Não realiza coleta automática de dados analíticos voltados ao desenvolvedor (além do que o Firebase/Google exigir para operar a autenticação).</li>
+    </ul>
+    <p>Se futuras versões incluírem funcionalidades adicionais (por exemplo, sincronização de avaliações em nuvem, analytics próprios), esta política será atualizada e os usuários serão informados.</p>
+
+    <hr>
+
+    <h2>8. Contato</h2>
+    <p>Para dúvidas, solicitações ou notificações sobre privacidade e direitos autorais, entre em contato com o desenvolvedor:</p>
+    <p><strong>Nome:</strong> Prof. Vitor Hansen (CREF 000781-G/RS)<br><strong>E-mail:</strong> <a href="mailto:fitmetrics.dev@gmail.com">fitmetrics.dev@gmail.com</a></p>
+    <p>Responsável pelo desenvolvimento e manutenção do app <strong>Fit Metrics Morfológico (FMMorpho)</strong>.</p>
+    <p><strong>Última atualização:</strong> abril de 2026 (conta Firebase, redefinição e exclusão de conta na nuvem)</p>
+
+    <hr>
+  </main>
+</body>
+</html>
