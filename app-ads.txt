@@ -1,3 +1,1 @@
-# STANDBY — Sem conta AdMob ainda.
-# Quando tiveres o snippet do AdMob: apaga TODAS as linhas (incluindo #) e cola só o que eles indicarem.
-# Formato típico: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-9109526497399126, DIRECT, f08c47fec0942fa0
